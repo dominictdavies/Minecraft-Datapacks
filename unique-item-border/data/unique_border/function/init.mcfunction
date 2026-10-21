@@ -9,6 +9,3 @@ worldborder center 0.5 0.5
 worldborder set 1
 worldborder warning distance 0
 worldborder warning time 0
-
-# Keep the spawn chunk loaded so the player can be placed there.
-forceload add 0 0
