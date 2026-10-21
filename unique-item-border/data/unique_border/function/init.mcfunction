@@ -6,3 +6,6 @@ worldborder set 2
 worldborder warning distance 0
 worldborder warning time 0
 setworldspawn 0 ~ 0
+
+# Keep the spawn chunk loaded so the player can be placed there
+forceload add 0 0
