@@ -5,3 +5,4 @@ worldborder center 1.0 1.0
 worldborder set 2
 worldborder warning distance 0
 worldborder warning time 0
+setworldspawn 0 ~ 0
