@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "World border starts at 1x1 and grows 10 blocks per unique item",
+    "description": "World border grows 10 blocks every unique item",
     "pack_format": 48,
     "supported_formats": [48, 1000],
     "min_format": 48,
