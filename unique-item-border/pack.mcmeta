@@ -1,9 +1,7 @@
 {
   "pack": {
     "description": "World border grows and shrinks with the unique items you keep",
-    "pack_format": 48,
-    "supported_formats": [48, 1000],
-    "min_format": 48,
-    "max_format": 1000
+    "min_format": 121,
+    "max_format": 121
   }
 }
