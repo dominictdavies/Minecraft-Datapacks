@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "join": {
+      "trigger": "minecraft:setup/tick"
+    }
+  },
+  "rewards": {
+    "function": "unique_border:setup/first_join"
+  }
+}
