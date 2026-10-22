@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "unique_border:setup/first_join"
+    "function": "item_border:setup/first_join"
   }
 }

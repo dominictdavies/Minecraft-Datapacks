@@ -1,6 +1,6 @@
-scoreboard players set #initialized unique_border 1
-scoreboard players set #items unique_border 0
-data modify storage unique_border:data seen set value {}
+scoreboard players set #initialized item_border 1
+scoreboard players set #items item_border 0
+data modify storage item_border:data seen set value {}
 worldborder center 0.0 0.0
 worldborder set 1
 worldborder warning distance 0

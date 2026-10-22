@@ -1,1 +1,5 @@
-{"values":["unique_border:setup/load"]}
+{
+    "values": [
+        "item_border:setup/load"
+    ]
+}
