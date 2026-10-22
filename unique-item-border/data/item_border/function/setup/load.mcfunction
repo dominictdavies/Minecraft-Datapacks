@@ -1,5 +1,6 @@
-# Create the scoreboard that holds all of the pack's numbers
+# Create the scoreboard for the pack's numbers, and the collections trigger
 scoreboard objectives add item_border dummy
+scoreboard objectives add item_border.collections trigger
 
 # Constants used for maths
 scoreboard players set #-1 item_border -1
