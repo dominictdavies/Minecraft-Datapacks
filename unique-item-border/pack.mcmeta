@@ -1,7 +1,9 @@
 {
   "pack": {
-    "description": "Grows the world border for every unique item (26.3)",
-    "min_format": 121,
-    "max_format": 121
+    "description": "Grows the world border for every unique item",
+    "pack_format": 48,
+    "supported_formats": [48, 1000],
+    "min_format": 48,
+    "max_format": 1000
   }
 }
