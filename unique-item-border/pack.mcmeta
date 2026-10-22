@@ -1,6 +1,6 @@
 {
   "pack": {
-    "description": "Grows the world border for every unique item",
+    "description": "World border grows and shrinks with the unique items you keep",
     "pack_format": 48,
     "supported_formats": [48, 1000],
     "min_format": 48,
