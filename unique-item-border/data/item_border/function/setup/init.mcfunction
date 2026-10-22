@@ -4,6 +4,4 @@ data modify storage item_border:data players set value []
 data modify storage item_border:data vaults set value []
 worldborder center 0.5 0.5
 worldborder set 1
-worldborder warning distance 0
-worldborder warning time 0
 setworldspawn 0 ~ 0
