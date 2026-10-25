@@ -5,7 +5,7 @@ scoreboard players operation #size item_border *= #2 item_border
 scoreboard players add #size item_border 1
 
 # Distance = how far the size changes from where the border is right now
-execute store result score #distance item_border run worldborder get
+execute in minecraft:overworld store result score #distance item_border run worldborder get
 scoreboard players operation #distance item_border -= #size item_border
 execute if score #distance item_border matches ..-1 run scoreboard players operation #distance item_border *= #-1 item_border
 

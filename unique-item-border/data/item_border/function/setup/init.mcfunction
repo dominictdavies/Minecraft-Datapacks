@@ -9,6 +9,10 @@ data modify storage item_border:data vaults set value []
 data modify storage item_border:data completed set value {}
 
 # Shrink the border to exactly block (0, 0) and spawn players there
-worldborder center 0.5 0.5
-worldborder set 1
+execute in minecraft:overworld run worldborder center 0.5 0.5
+execute in minecraft:the_nether run worldborder center 0.5 0.5
+execute in minecraft:the_end run worldborder center 0.5 0.5
+execute in minecraft:overworld run worldborder set 1
+execute in minecraft:the_nether run worldborder set 1
+execute in minecraft:the_end run worldborder set 1
 setworldspawn 0 ~ 0
