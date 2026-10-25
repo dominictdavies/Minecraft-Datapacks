@@ -1,4 +1,4 @@
-# If this point is inside a chest, register it at the chest's center and stop
+# If this point is inside a chest, register or unregister it at the chest's center and stop
 execute if block ~ ~ ~ #item_border:chests align xyz positioned ~0.5 ~0.5 ~0.5 run return run function item_border:vaults/register
 
 # Otherwise step 0.1 blocks further, until out of steps
