@@ -20,9 +20,9 @@ function item_border:collections/define
 # Recount on every load in case anything changed while the pack was off
 scoreboard players set #dirty item_border 1
 
-# Rescale the nether and end borders from the overworld one, for worlds made before each dimension had its own border
+# Center the nether and end borders, for worlds made before each dimension had its own border
 execute in minecraft:the_nether run worldborder center 0.5 0.5
 execute in minecraft:the_end run worldborder center 0.5 0.5
-execute in minecraft:overworld store result score #size item_border run worldborder get
-scoreboard players set #time item_border 0
-function item_border:border/apply
+
+# Move every dimension's border towards its target size, finishing any move interrupted by a reload
+function item_border:border/update
