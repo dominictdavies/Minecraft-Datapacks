@@ -14,10 +14,8 @@ scoreboard players operation #time item_border = #distance item_border
 scoreboard players operation #time item_border *= #10 item_border
 scoreboard players operation #time item_border /= #step item_border
 
-# Apply the new size and time to the border
-execute store result storage item_border:data border.size int 1 run scoreboard players get #size item_border
-execute store result storage item_border:data border.time int 1 run scoreboard players get #time item_border
-function item_border:border/apply_border with storage item_border:data border
+# Apply the new size and time to the border in every dimension
+function item_border:border/apply
 
 # Show everyone the new unique item count
 title @a actionbar [{"text":"Unique items: ","color":"gray"},{"score":{"name":"#items","objective":"item_border"},"color":"white"}]

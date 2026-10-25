@@ -5,6 +5,7 @@ scoreboard objectives add item_border.collections trigger
 # Constants used for maths
 scoreboard players set #-1 item_border -1
 scoreboard players set #2 item_border 2
+scoreboard players set #8 item_border 8
 scoreboard players set #10 item_border 10
 
 # Set up the world the first time the pack loads
@@ -19,9 +20,9 @@ function item_border:collections/define
 # Recount on every load in case anything changed while the pack was off
 scoreboard players set #dirty item_border 1
 
-# Match the nether and end borders to the overworld one, for worlds made before each dimension had its own border
+# Rescale the nether and end borders from the overworld one, for worlds made before each dimension had its own border
 execute in minecraft:the_nether run worldborder center 0.5 0.5
 execute in minecraft:the_end run worldborder center 0.5 0.5
-execute in minecraft:overworld store result storage item_border:data border.size int 1 run worldborder get
-data modify storage item_border:data border.time set value 0
-function item_border:border/apply_border with storage item_border:data border
+execute in minecraft:overworld store result score #size item_border run worldborder get
+scoreboard players set #time item_border 0
+function item_border:border/apply
